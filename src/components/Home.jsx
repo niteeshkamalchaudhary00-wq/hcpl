@@ -161,22 +161,22 @@ const Home = () => {
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
-              <div className="absolute inset-0 flex items-center">
-                <div className="container mx-auto px-4">
-                  <div className="max-w-3xl text-white">
-                    <div className="mb-4 inline-block">
-                      <span className="bg-[#d19336] px-4 py-2 rounded-full text-sm font-semibold uppercase tracking-wide">
+              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30"></div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="container mx-auto px-4 md:px-6 lg:px-8">
+                  <div className="max-w-4xl mx-auto text-white text-center">
+                    <div className="mb-6 inline-block">
+                      <span className="bg-[#d19336] px-6 py-2 rounded-full text-sm font-semibold uppercase tracking-wide">
                         Premium Quality
                       </span>
                     </div>
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
                       {slide.title}
                     </h1>
-                    <p className="text-xl md:text-2xl mb-8 text-gray-200">
+                    <p className="text-xl md:text-2xl mb-10 text-gray-100 max-w-2xl mx-auto">
                       {slide.subtitle}
                     </p>
-                    <div className="flex flex-wrap gap-4">
+                    <div className="flex flex-wrap gap-4 justify-center">
                       <Link
                         to={slide.link}
                         className="bg-[#d19336] hover:bg-[#b8822a] text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl inline-flex items-center gap-2"

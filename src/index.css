@@ -10,6 +10,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -18,6 +19,8 @@ body {
   background-color: #ffffff;
   line-height: 1.7;
   font-size: 16px;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 a {
@@ -100,6 +103,45 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Container centering fix */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
 }
 
 /* Loading animation */
