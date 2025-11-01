@@ -259,9 +259,9 @@ const Footer = () => {
   }
 
   return (
-    <footer className="bg-gradient-to-br from-[#231f20] via-gray-900 to-[#231f20] text-white mt-auto">
+    <footer className="bg-gradient-to-br from-[#231f20] via-gray-900 to-[#231f20] text-white mt-16">
       {/* Quick Enquiry Section */}
-      <div className="bg-gradient-to-r from-[#d19336] to-[#b8822a] py-12">
+      <div className="bg-gradient-to-r from-[#d19336] to-[#b8822a] py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
@@ -449,7 +449,7 @@ const Footer = () => {
       </div>
 
       {/* Main Footer Content */}
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
           {/* Company Info */}
           <div>
