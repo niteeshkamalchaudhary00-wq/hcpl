@@ -33,6 +33,10 @@ outputType = "webview"
 localPort = 5000
 externalPort = 3000
 
+[[ports]]
+localPort = 35763
+externalPort = 80
+
 [deployment]
 deploymentTarget = "autoscale"
 run = ["npx", "vite", "preview", "--host", "0.0.0.0", "--port"]
