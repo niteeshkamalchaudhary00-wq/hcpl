@@ -452,73 +452,87 @@ const Footer = () => {
       </div>
 
       {/* Main Footer Content */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
-          {/* Company Info */}
-          <div>
-            <h3 className="text-2xl font-bold text-white mb-4">
-              HALEY CIBUS <span className="text-[#d19336]">PVT. LTD.</span>
-            </h3>
-            <p className="text-gray-400 text-sm mb-4 leading-relaxed">
-              Leading manufacturer and exporter of water treatment plants, RO systems, and beverage manufacturing equipment.
-            </p>
-            <div className="flex gap-3">
-              <a href="https://www.facebook.com/Haleypremiumwater" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 hover:bg-[#d19336] rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="https://twitter.com/HaleyWaterIndia" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 hover:bg-[#d19336] rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="https://instagram.com/haleywaterindia" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 hover:bg-[#d19336] rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 hover:bg-[#d19336] rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110">
-                <i className="fab fa-linkedin-in"></i>
-              </a>
+      <div className="relative overflow-hidden">
+        {/* Decorative background pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'
+          }}></div>
+        </div>
+        
+        <div className="container mx-auto px-4 py-16 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+            {/* Company Info */}
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-3xl font-bold text-white mb-2 tracking-tight">
+                  HALEY CIBUS
+                </h3>
+                <p className="text-[#d19336] text-lg font-semibold mb-4">PVT. LTD.</p>
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Leading manufacturer and exporter of water treatment plants, RO systems, and beverage manufacturing equipment with global reach.
+              </p>
+              <div>
+                <p className="text-white text-sm font-semibold mb-3">Connect With Us</p>
+                <div className="flex gap-2">
+                  <a href="https://www.facebook.com/Haleypremiumwater" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-white/5 hover:bg-[#d19336] rounded-xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:rotate-6 border border-white/10 hover:border-[#d19336] group">
+                    <i className="fab fa-facebook-f text-gray-300 group-hover:text-white"></i>
+                  </a>
+                  <a href="https://twitter.com/HaleyWaterIndia" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-white/5 hover:bg-[#d19336] rounded-xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:rotate-6 border border-white/10 hover:border-[#d19336] group">
+                    <i className="fab fa-twitter text-gray-300 group-hover:text-white"></i>
+                  </a>
+                  <a href="https://instagram.com/haleywaterindia" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-white/5 hover:bg-[#d19336] rounded-xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:rotate-6 border border-white/10 hover:border-[#d19336] group">
+                    <i className="fab fa-instagram text-gray-300 group-hover:text-white"></i>
+                  </a>
+                  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-white/5 hover:bg-[#d19336] rounded-xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:rotate-6 border border-white/10 hover:border-[#d19336] group">
+                    <i className="fab fa-linkedin-in text-gray-300 group-hover:text-white"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-4 flex items-center">
-              <span className="w-1 h-6 bg-[#d19336] mr-2"></span>
+            <h4 className="text-lg font-bold text-white mb-6 flex items-center">
+              <span className="w-1 h-8 bg-gradient-to-b from-[#d19336] to-[#b8822a] mr-3 rounded-full"></span>
               Quick Links
             </h4>
-            <ul className="space-y-2.5">
+            <ul className="space-y-3">
               <li>
-                <Link to="/" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 flex items-center gap-2 group">
-                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
-                  Home
+                <Link to="/" className="text-gray-400 hover:text-white transition-all duration-300 flex items-center gap-3 group text-sm">
+                  <span className="w-1.5 h-1.5 bg-[#d19336] rounded-full group-hover:scale-150 transition-transform"></span>
+                  <span className="group-hover:translate-x-1 transition-transform">Home</span>
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 flex items-center gap-2 group">
-                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
-                  About Us
+                <Link to="/about" className="text-gray-400 hover:text-white transition-all duration-300 flex items-center gap-3 group text-sm">
+                  <span className="w-1.5 h-1.5 bg-[#d19336] rounded-full group-hover:scale-150 transition-transform"></span>
+                  <span className="group-hover:translate-x-1 transition-transform">About Us</span>
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 flex items-center gap-2 group">
-                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
-                  Products
+                <Link to="/products" className="text-gray-400 hover:text-white transition-all duration-300 flex items-center gap-3 group text-sm">
+                  <span className="w-1.5 h-1.5 bg-[#d19336] rounded-full group-hover:scale-150 transition-transform"></span>
+                  <span className="group-hover:translate-x-1 transition-transform">Products</span>
                 </Link>
               </li>
               <li>
-                <Link to="/clients" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 flex items-center gap-2 group">
-                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
-                  Our Clients
+                <Link to="/clients" className="text-gray-400 hover:text-white transition-all duration-300 flex items-center gap-3 group text-sm">
+                  <span className="w-1.5 h-1.5 bg-[#d19336] rounded-full group-hover:scale-150 transition-transform"></span>
+                  <span className="group-hover:translate-x-1 transition-transform">Our Clients</span>
                 </Link>
               </li>
               <li>
-                <Link to="/videos" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 flex items-center gap-2 group">
-                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
-                  Videos
+                <Link to="/videos" className="text-gray-400 hover:text-white transition-all duration-300 flex items-center gap-3 group text-sm">
+                  <span className="w-1.5 h-1.5 bg-[#d19336] rounded-full group-hover:scale-150 transition-transform"></span>
+                  <span className="group-hover:translate-x-1 transition-transform">Videos</span>
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 flex items-center gap-2 group">
-                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
-                  Contact Us
+                <Link to="/contact" className="text-gray-400 hover:text-white transition-all duration-300 flex items-center gap-3 group text-sm">
+                  <span className="w-1.5 h-1.5 bg-[#d19336] rounded-full group-hover:scale-150 transition-transform"></span>
+                  <span className="group-hover:translate-x-1 transition-transform">Contact Us</span>
                 </Link>
               </li>
             </ul>
@@ -526,39 +540,39 @@ const Footer = () => {
 
           {/* Popular Products */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-4 flex items-center">
-              <span className="w-1 h-6 bg-[#d19336] mr-2"></span>
+            <h4 className="text-lg font-bold text-white mb-6 flex items-center">
+              <span className="w-1 h-8 bg-gradient-to-b from-[#d19336] to-[#b8822a] mr-3 rounded-full"></span>
               Popular Products
             </h4>
-            <ul className="space-y-2.5">
+            <ul className="space-y-3">
               <li>
-                <Link to="/products" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 text-sm flex items-center gap-2 group">
-                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
-                  RO Water Plants
+                <Link to="/products" className="text-gray-400 hover:text-white transition-all duration-300 text-sm flex items-center gap-3 group">
+                  <span className="w-1.5 h-1.5 bg-[#d19336] rounded-full group-hover:scale-150 transition-transform"></span>
+                  <span className="group-hover:translate-x-1 transition-transform">RO Water Plants</span>
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 text-sm flex items-center gap-2 group">
-                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
-                  Mineral Water Plants
+                <Link to="/products" className="text-gray-400 hover:text-white transition-all duration-300 text-sm flex items-center gap-3 group">
+                  <span className="w-1.5 h-1.5 bg-[#d19336] rounded-full group-hover:scale-150 transition-transform"></span>
+                  <span className="group-hover:translate-x-1 transition-transform">Mineral Water Plants</span>
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 text-sm flex items-center gap-2 group">
-                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
-                  Sewage Treatment Plants
+                <Link to="/products" className="text-gray-400 hover:text-white transition-all duration-300 text-sm flex items-center gap-3 group">
+                  <span className="w-1.5 h-1.5 bg-[#d19336] rounded-full group-hover:scale-150 transition-transform"></span>
+                  <span className="group-hover:translate-x-1 transition-transform">Sewage Treatment Plants</span>
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 text-sm flex items-center gap-2 group">
-                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
-                  Water Softeners
+                <Link to="/products" className="text-gray-400 hover:text-white transition-all duration-300 text-sm flex items-center gap-3 group">
+                  <span className="w-1.5 h-1.5 bg-[#d19336] rounded-full group-hover:scale-150 transition-transform"></span>
+                  <span className="group-hover:translate-x-1 transition-transform">Water Softeners</span>
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 text-sm flex items-center gap-2 group">
-                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
-                  Filling Machines
+                <Link to="/products" className="text-gray-400 hover:text-white transition-all duration-300 text-sm flex items-center gap-3 group">
+                  <span className="w-1.5 h-1.5 bg-[#d19336] rounded-full group-hover:scale-150 transition-transform"></span>
+                  <span className="group-hover:translate-x-1 transition-transform">Filling Machines</span>
                 </Link>
               </li>
             </ul>
@@ -566,54 +580,64 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-4 flex items-center">
-              <span className="w-1 h-6 bg-[#d19336] mr-2"></span>
+            <h4 className="text-lg font-bold text-white mb-6 flex items-center">
+              <span className="w-1 h-8 bg-gradient-to-b from-[#d19336] to-[#b8822a] mr-3 rounded-full"></span>
               Contact Info
             </h4>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-gray-400">
-                <i className="fas fa-map-marker-alt text-[#d19336] mt-1 text-sm"></i>
-                <span className="text-sm">Moti Nagar, Delhi, India</span>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3 group">
+                <div className="w-9 h-9 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-[#d19336] transition-all duration-300">
+                  <i className="fas fa-map-marker-alt text-[#d19336] text-sm group-hover:text-white"></i>
+                </div>
+                <span className="text-sm text-gray-400 group-hover:text-white transition-colors pt-2">Moti Nagar, Delhi, India</span>
               </li>
-              <li className="flex items-start gap-3">
-                <i className="fas fa-phone text-[#d19336] mt-1 text-sm"></i>
-                <a href="tel:+917230092401" className="text-gray-400 hover:text-[#d19336] transition-colors text-sm">
+              <li className="flex items-start gap-3 group">
+                <div className="w-9 h-9 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-[#d19336] transition-all duration-300">
+                  <i className="fas fa-phone text-[#d19336] text-sm group-hover:text-white"></i>
+                </div>
+                <a href="tel:+917230092401" className="text-sm text-gray-400 hover:text-white transition-colors pt-2">
                   +91-7230092401
                 </a>
               </li>
-              <li className="flex items-start gap-3">
-                <i className="fas fa-envelope text-[#d19336] mt-1 text-sm"></i>
-                <a href="mailto:hcplbharat@gmail.com" className="text-gray-400 hover:text-[#d19336] transition-colors text-sm break-all">
+              <li className="flex items-start gap-3 group">
+                <div className="w-9 h-9 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-[#d19336] transition-all duration-300">
+                  <i className="fas fa-envelope text-[#d19336] text-sm group-hover:text-white"></i>
+                </div>
+                <a href="mailto:hcplbharat@gmail.com" className="text-sm text-gray-400 hover:text-white transition-colors pt-2 break-all">
                   hcplbharat@gmail.com
                 </a>
               </li>
-              <li className="flex items-start gap-3 text-gray-400">
-                <i className="fas fa-clock text-[#d19336] mt-1 text-sm"></i>
-                <span className="text-sm">Mon - Sat: 9:00 AM - 6:00 PM</span>
+              <li className="flex items-start gap-3 group">
+                <div className="w-9 h-9 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-[#d19336] transition-all duration-300">
+                  <i className="fas fa-clock text-[#d19336] text-sm group-hover:text-white"></i>
+                </div>
+                <span className="text-sm text-gray-400 group-hover:text-white transition-colors pt-2">Mon - Sat: 9:00 AM - 6:00 PM</span>
               </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-8 mt-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
-            <p className="text-center md:text-left">
-              &copy; 2024 <span className="font-semibold text-white">HALEY CIBUS PVT. LTD.</span> All Rights Reserved.
+        <div className="border-t border-white/10 pt-8 mt-12">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-center md:text-left text-sm text-gray-400">
+              &copy; 2024 <span className="font-bold text-white">HALEY CIBUS PVT. LTD.</span> All Rights Reserved.
             </p>
-            <p className="text-center md:text-right">
-              Developed & Managed By{' '}
+            <div className="flex items-center gap-2 text-sm text-gray-400">
+              <span>Developed & Managed By</span>
               <a
                 href="https://www.weblink.in"
                 rel="nofollow"
                 target="_blank"
-                className="text-[#d19336] hover:text-white transition-colors font-medium"
+                className="text-[#d19336] hover:text-white transition-colors font-semibold inline-flex items-center gap-1 group"
               >
                 Weblink.In Pvt. Ltd.
+                <i className="fas fa-external-link-alt text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
               </a>
-            </p>
+            </div>
           </div>
         </div>
+      </div>
       </div>
     </footer>
   )
