@@ -540,46 +540,54 @@ const Home = () => {
       </section>
 
       {/* Company Info Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-50 to-white mb-0">
+      <section className="py-20 bg-white border-t border-gray-100">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
+            <span className="bg-[#d19336]/10 text-[#d19336] px-4 py-2 rounded-full text-sm font-semibold uppercase tracking-wide inline-block mb-4">
+              About Our Company
+            </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               <span className="text-[#231f20]">Company </span>
               <span className="text-[#d19336]">Highlights</span>
             </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Trusted manufacturer and exporter with years of excellence
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 text-center group hover:-translate-y-2">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#d19336] to-[#b8822a] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <i className="fas fa-industry text-3xl text-white"></i>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border border-gray-200 hover:border-[#d19336] transition-all duration-300 text-center group hover:shadow-xl">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#d19336] to-[#b8822a] rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <i className="fas fa-industry text-2xl text-white"></i>
               </div>
-              <div className="text-sm text-gray-500 uppercase tracking-wide mb-2">Nature of Business</div>
-              <div className="font-bold text-[#231f20] text-lg">Manufacturer, Exporter & Supplier</div>
+              <div className="text-xs text-gray-500 uppercase tracking-widest mb-3 font-semibold">Nature of Business</div>
+              <div className="font-bold text-[#231f20] text-base leading-snug">Manufacturer, Exporter & Supplier</div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 text-center group hover:-translate-y-2">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#d19336] to-[#b8822a] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <i className="fas fa-users text-3xl text-white"></i>
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border border-gray-200 hover:border-[#d19336] transition-all duration-300 text-center group hover:shadow-xl">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#d19336] to-[#b8822a] rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <i className="fas fa-users text-2xl text-white"></i>
               </div>
-              <div className="text-sm text-gray-500 uppercase tracking-wide mb-2">Team Members</div>
-              <div className="font-bold text-[#d19336] text-4xl">17+</div>
+              <div className="text-xs text-gray-500 uppercase tracking-widest mb-3 font-semibold">Team Members</div>
+              <div className="font-bold text-[#d19336] text-5xl mb-1">17+</div>
+              <div className="text-sm text-gray-500">Professionals</div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 text-center group hover:-translate-y-2">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#d19336] to-[#b8822a] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <i className="fas fa-calendar text-3xl text-white"></i>
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border border-gray-200 hover:border-[#d19336] transition-all duration-300 text-center group hover:shadow-xl">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#d19336] to-[#b8822a] rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <i className="fas fa-calendar-check text-2xl text-white"></i>
               </div>
-              <div className="text-sm text-gray-500 uppercase tracking-wide mb-2">Established</div>
-              <div className="font-bold text-[#d19336] text-4xl">2021</div>
+              <div className="text-xs text-gray-500 uppercase tracking-widest mb-3 font-semibold">Year Established</div>
+              <div className="font-bold text-[#d19336] text-5xl mb-1">2021</div>
+              <div className="text-sm text-gray-500">Since</div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 text-center group hover:-translate-y-2">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#d19336] to-[#b8822a] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <i className="fas fa-globe text-3xl text-white"></i>
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border border-gray-200 hover:border-[#d19336] transition-all duration-300 text-center group hover:shadow-xl">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#d19336] to-[#b8822a] rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <i className="fas fa-globe-americas text-2xl text-white"></i>
               </div>
-              <div className="text-sm text-gray-500 uppercase tracking-wide mb-2">Market Coverage</div>
-              <div className="font-bold text-[#231f20] text-lg">Worldwide</div>
+              <div className="text-xs text-gray-500 uppercase tracking-widest mb-3 font-semibold">Market Coverage</div>
+              <div className="font-bold text-[#231f20] text-base leading-snug">Worldwide Export</div>
             </div>
           </div>
         </div>

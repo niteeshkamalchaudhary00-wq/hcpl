@@ -259,26 +259,29 @@ const Footer = () => {
   }
 
   return (
-    <footer className="bg-gradient-to-br from-[#231f20] via-gray-900 to-[#231f20] text-white mt-16">
+    <footer className="bg-gradient-to-br from-[#231f20] via-gray-900 to-[#231f20] text-white mt-0">
       {/* Quick Enquiry Section */}
-      <div className="bg-gradient-to-r from-[#d19336] to-[#b8822a] py-16">
+      <div className="bg-gradient-to-br from-[#231f20] to-gray-900 py-20 border-t-4 border-[#d19336]">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-[#d19336] rounded-2xl mb-6 shadow-xl">
+                <i className="fas fa-comment-dots text-3xl text-white"></i>
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-3">
                 Get a Quick Quote
               </h3>
-              <p className="text-white/90">Tell us what you're looking for and we'll get back to you</p>
+              <p className="text-gray-300 text-lg max-w-2xl mx-auto">Tell us what you're looking for and we'll get back to you with the best solution</p>
             </div>
             
-            <form onSubmit={handleSubmit} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-2xl">
+            <form onSubmit={handleSubmit} className="bg-white rounded-3xl p-8 md:p-10 shadow-2xl border border-gray-200">
               {submitSuccess ? (
                 <div className="text-center py-8">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
-                    <i className="fas fa-check text-3xl text-white"></i>
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                    <i className="fas fa-check text-3xl text-green-600"></i>
                   </div>
-                  <h4 className="text-2xl font-bold mb-2">Thank You!</h4>
-                  <p className="text-white/90">Your enquiry has been sent successfully.</p>
+                  <h4 className="text-2xl font-bold mb-2 text-gray-800">Thank You!</h4>
+                  <p className="text-gray-600">Your enquiry has been sent successfully. We'll contact you soon.</p>
                 </div>
               ) : (
                 <div className="space-y-4">
@@ -289,7 +292,7 @@ const Footer = () => {
                       value={formData.productService}
                       onChange={handleProductChange}
                       placeholder="Search for a product or service..."
-                      className="w-full px-5 py-3.5 rounded-xl border-2 border-white/20 bg-white/95 focus:bg-white focus:border-white focus:outline-none text-gray-800 placeholder-gray-500 transition-all duration-300 shadow-lg"
+                      className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 bg-white focus:border-[#d19336] focus:outline-none text-gray-800 placeholder-gray-400 transition-all duration-300"
                       required
                     />
                     {showSuggestions && filteredSuggestions.length > 0 && (
@@ -317,7 +320,7 @@ const Footer = () => {
                         value={formData.quantity}
                         onChange={(e) => setFormData(prev => ({ ...prev, quantity: e.target.value }))}
                         placeholder="Quantity"
-                        className="px-5 py-3.5 rounded-xl border-2 border-white/20 bg-white/95 focus:bg-white focus:border-white focus:outline-none text-gray-800 shadow-lg"
+                        className="px-5 py-4 rounded-xl border-2 border-gray-200 bg-white focus:border-[#d19336] focus:outline-none text-gray-800"
                       />
                       <div className="relative" ref={unitRef}>
                         <input
@@ -326,7 +329,7 @@ const Footer = () => {
                           onChange={handleUnitChange}
                           placeholder="Unit"
                           readOnly={isUnitReadOnly}
-                          className="w-full px-5 py-3.5 rounded-xl border-2 border-white/20 bg-white/90 focus:bg-white focus:border-white focus:outline-none text-gray-800 shadow-lg"
+                          className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 bg-white focus:border-[#d19336] focus:outline-none text-gray-800"
                         />
                         {!isUnitReadOnly && showUnitSuggestions && unitSuggestions.length > 0 && (
                           <div className="absolute z-20 w-full mt-2 bg-white border border-gray-200 rounded-xl shadow-2xl max-h-48 overflow-y-auto">
@@ -346,7 +349,7 @@ const Footer = () => {
                         <button
                           type="button"
                           onClick={() => setIsUnitReadOnly(false)}
-                          className="px-5 py-3.5 rounded-xl bg-white/20 hover:bg-white/30 text-white font-medium transition-all duration-300 flex items-center justify-center gap-2"
+                          className="px-5 py-4 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium transition-all duration-300 flex items-center justify-center gap-2"
                         >
                           <i className="fas fa-edit"></i> Edit Unit
                         </button>
@@ -360,7 +363,7 @@ const Footer = () => {
                     value={formData.details}
                     onChange={(e) => setFormData(prev => ({ ...prev, details: e.target.value }))}
                     placeholder="Describe your requirement..."
-                    className="w-full px-5 py-3.5 rounded-xl border-2 border-white/20 bg-white/95 focus:bg-white focus:border-white focus:outline-none text-gray-800 placeholder-gray-500 resize-none shadow-lg"
+                    className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 bg-white focus:border-[#d19336] focus:outline-none text-gray-800 placeholder-gray-400 resize-none"
                   />
 
                   {/* Name and Email */}
@@ -371,7 +374,7 @@ const Footer = () => {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="Your Name *"
-                      className="px-5 py-3.5 rounded-xl border-2 border-white/20 bg-white/95 focus:bg-white focus:border-white focus:outline-none text-gray-800 placeholder-gray-500 shadow-lg"
+                      className="px-5 py-4 rounded-xl border-2 border-gray-200 bg-white focus:border-[#d19336] focus:outline-none text-gray-800 placeholder-gray-400"
                       required
                     />
                     <input
@@ -380,7 +383,7 @@ const Footer = () => {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="Email Address *"
-                      className="px-5 py-3.5 rounded-xl border-2 border-white/20 bg-white/95 focus:bg-white focus:border-white focus:outline-none text-gray-800 placeholder-gray-500 shadow-lg"
+                      className="px-5 py-4 rounded-xl border-2 border-gray-200 bg-white focus:border-[#d19336] focus:outline-none text-gray-800 placeholder-gray-400"
                       required
                     />
                   </div>
@@ -391,7 +394,7 @@ const Footer = () => {
                       name="country"
                       value={formData.country}
                       onChange={handleCountryChange}
-                      className="px-5 py-3.5 rounded-xl border-2 border-white/20 bg-white/95 focus:bg-white focus:border-white focus:outline-none text-gray-800 shadow-lg"
+                      className="px-5 py-4 rounded-xl border-2 border-gray-200 bg-white focus:border-[#d19336] focus:outline-none text-gray-800"
                       required
                     >
                       <option value="">Select Country *</option>
@@ -407,7 +410,7 @@ const Footer = () => {
                         name="phone_isd"
                         value={formData.phoneIsd}
                         readOnly
-                        className="w-20 px-3 py-3.5 rounded-xl border-2 border-white/20 bg-white/70 text-gray-800 text-center font-semibold shadow-lg"
+                        className="w-20 px-3 py-4 rounded-xl border-2 border-gray-200 bg-gray-50 text-gray-800 text-center font-semibold"
                       />
                       <input
                         type="tel"
@@ -415,18 +418,18 @@ const Footer = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         placeholder="Mobile Number *"
-                        className="flex-1 px-5 py-3.5 rounded-xl border-2 border-white/20 bg-white/95 focus:bg-white focus:border-white focus:outline-none text-gray-800 placeholder-gray-500 shadow-lg"
+                        className="flex-1 px-5 py-4 rounded-xl border-2 border-gray-200 bg-white focus:border-[#d19336] focus:outline-none text-gray-800 placeholder-gray-400"
                         required
                       />
                     </div>
                   </div>
 
                   {/* Submit */}
-                  <div className="text-center pt-2">
+                  <div className="text-center pt-4">
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="bg-[#231f20] hover:bg-black text-white px-12 py-4 rounded-xl font-bold text-lg transition-all duration-300 disabled:opacity-50 shadow-2xl transform hover:scale-105 disabled:hover:scale-100"
+                      className="bg-gradient-to-r from-[#d19336] to-[#b8822a] hover:from-[#b8822a] hover:to-[#d19336] text-white px-12 py-4 rounded-xl font-bold text-lg transition-all duration-300 disabled:opacity-50 shadow-xl transform hover:scale-105 disabled:hover:scale-100"
                     >
                       {isSubmitting ? (
                         <span className="flex items-center gap-2">
