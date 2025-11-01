@@ -18,6 +18,7 @@ export default defineConfig({
     allowedHosts: [
       "all",
       "d3a52a2a-2e3a-4577-bbe6-690a0073f679-00-3kzahkd02swip.pike.replit.dev",
+      "c560dba8-1807-4da6-b285-66b27718cf5f-00-1v5t3x5s82lgw.riker.replit.dev",
     ],
   },
 });
