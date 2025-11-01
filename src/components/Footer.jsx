@@ -102,256 +102,50 @@ const Footer = () => {
     { label: "Stp Plant Project Work", id: 7319625, unit: "Unit", type: "0" }
   ]
 
-  // Complete units list from the provided JavaScript
   const units = [
-    "piece", "pc", "pieces", "pcs", "Kilogram", "kg", "Kilograms", "kgs", "Bag", "Bags", "Unit", "Units", "Pair", "Pairs", "Set", "Sets", "Meter", "m", "Ton", "Tn", "Tons", "Metric Ton", "MT", "Metric Tons", "Box", "Boxes", "Square Feet", "Sq. Ft.", "Roll", "Rolls", "Bottle", "Bottles", "Litre", "Ltr", "Litres", "Ltrs", "Packet", "Pkt", "Packets", "Pkts", "Sheet", "Sheets", "Dozen", "Doz", "Dozens", "Carton", "CTN", "Cartons", "Container", "CNT", "Containers", "Pack", "Packs", "Ream", "Reams", "Gram", "gm", "Grams", "gms", "Ounce", "oz", "Pound", "lb", "Pounds", "lbs", "Gallon", "gal", "Gallons", "Bushel", "bsh", "Kilometer", "Km", "Kilometers", "Kms", "Square Meter", "Sq. Mtr.", "Square Meters", "Sq. Mtrs", "Hectare", "hect", "Hectares", "Short Ton", "short tn", "Short Tons", "Long Ton", "long tn", "Long Tons", "Foot", "Ft.", "Feet", "Carat", "ct", "Milliliter", "ml", "Quintal", "qq", "Quintals", "Strip", "Strips", "Square Inch", "Sq. in.", "Inch", "in", "Inches", "Decimeter", "dm", "Decimeters", "Cubic Feet", "cu ft", "Yard", "yd", "Yards", "yds", "Centimeter", "cm", "Centimeters", "cms", "Number", "No", "Numbers", "Nos", "Bale", "Bales", "Bundle", "Bundles", "Buckle", "Buckles", "Can", "Cans", "Cubic meter", "cu. m.", "Cubic Centimeter", "ccm", "cm3", "Drum", "Drums", "Great Gross", "gr gr", "Gross", "gr", "Kilolitre", "kl", "Kilolitres", "Square yard", "Sq. Yd.", "Square yards", "Sq. Yds.", "Barrel", "Barrels", "hour", "hr", "hours", "hrs", "Millimeter", "mm", "Square Centimeter", "cm2", "Mile", "Cubic Inch", "in3", "Imperial Teaspoon", "Imperial tsp", "Imperial TableSpoon", "Imperial Tbsp", "Fluid Ounce", "fl oz", "Imperial Cup", "Imperial Pint", "Imperial Quart", "Imperial Gallon", "US teaspoon", "US tsp", "US Tablespoon", "US tbsp", "US Legal Cup", "US Liquid Pint", "US Liquid Quart", "US Liquid Gallon", "Minute", "Day", "Week", "Month", "Year", "Decade", "Century", "Nautical Mile", "nmi", "Acre", "milligram", "mg", "milligrams", "Bunch", "Jar", "Jars", "Capsule", "cap.", "Capsules", "Board", "Boards", "Watt", "Kilowatt", "Machine", "Plant"
+    "piece", "pc", "pieces", "pcs", "Kilogram", "kg", "Kilograms", "kgs", "Bag", "Bags", "Unit", "Units", "Pair", "Pairs", "Set", "Sets", "Meter", "m", "Ton", "Tn", "Tons", "Metric Ton", "MT", "Metric Tons", "Box", "Boxes", "Square Feet", "Sq. Ft.", "Roll", "Rolls", "Bottle", "Bottles", "Litre", "Ltr", "Litres", "Ltrs", "Packet", "Pkt", "Packets", "Pkts", "Sheet", "Sheets", "Dozen", "Doz", "Dozens", "Carton", "CTN", "Cartons", "Container", "CNT", "Containers", "Pack", "Packs"
   ]
 
-  // Complete countries list
   const countries = [
     { value: "AF^93", label: "Afghanistan" },
     { value: "AL^335", label: "Albania" },
     { value: "DZ^213", label: "Algeria" },
-    { value: "AS^684", label: "American Samoa" },
-    { value: "AD^376", label: "Andorra" },
-    { value: "AO^244", label: "Angola" },
-    { value: "AI^264", label: "Anguilla" },
-    { value: "AQ^672", label: "Antarctica" },
-    { value: "AG^268", label: "Antigua and Barbuda" },
-    { value: "AR^54", label: "Argentina" },
-    { value: "AM^374", label: "Armenia" },
-    { value: "AW^297", label: "Aruba" },
     { value: "AU^61", label: "Australia" },
     { value: "AT^43", label: "Austria" },
-    { value: "AZ^994", label: "Azerbaijan" },
-    { value: "BS^242", label: "Bahamas" },
-    { value: "BH^973", label: "Bahrain" },
     { value: "BD^880", label: "Bangladesh" },
-    { value: "BB^246", label: "Barbados" },
-    { value: "BY^375", label: "Belarus" },
     { value: "BE^32", label: "Belgium" },
-    { value: "BZ^501", label: "Belize" },
-    { value: "BJ^229", label: "Benin" },
-    { value: "BM^441", label: "Bermuda" },
-    { value: "BT^975", label: "Bhutan" },
-    { value: "BO^591", label: "Bolivia" },
-    { value: "BA^387", label: "Bosnia and Herzegowina" },
-    { value: "BW^267", label: "Botswana" },
-    { value: "BV^47", label: "Bouvet Island" },
     { value: "BR^55", label: "Brazil" },
-    { value: "IO^246", label: "British Indian Ocean Territory" },
-    { value: "BN^673", label: "Brunei Darussalam" },
-    { value: "BG^359", label: "Bulgaria" },
-    { value: "BF^226", label: "Burkina Faso" },
-    { value: "BI^257", label: "Burundi" },
-    { value: "KH^855", label: "Cambodia" },
-    { value: "CM^237", label: "Cameroon" },
     { value: "CA^1", label: "Canada" },
-    { value: "CV^238", label: "Cape Verde" },
-    { value: "KY^345", label: "Cayman Islands" },
-    { value: "CF^236", label: "Central African Republic" },
-    { value: "TD^235", label: "Chad" },
-    { value: "CL^56", label: "Chile" },
     { value: "CN^86", label: "China" },
-    { value: "CX^61", label: "Christmas Island" },
-    { value: "CC^61", label: "Cocos (Keeling) Islands" },
-    { value: "CO^57", label: "Colombia" },
-    { value: "KM^269", label: "Comoros" },
-    { value: "CG^242", label: "Congo" },
-    { value: "CK^682", label: "Cook Islands" },
-    { value: "CR^506", label: "Costa Rica" },
-    { value: "CI^225", label: "Cote D'Ivoire" },
-    { value: "HR^385", label: "Croatia" },
-    { value: "CU^53", label: "Cuba" },
-    { value: "CY^357", label: "Cyprus" },
-    { value: "CZ^420", label: "Czech Republic" },
     { value: "DK^45", label: "Denmark" },
-    { value: "DJ^253", label: "Djibouti" },
-    { value: "DM^767", label: "Dominica" },
-    { value: "DO^809", label: "Dominican Republic" },
-    { value: "TP^670", label: "East Timor" },
-    { value: "EC^593", label: "Ecuador" },
     { value: "EG^20", label: "Egypt" },
-    { value: "SV^503", label: "El Salvador" },
-    { value: "GQ^240", label: "Equatorial Guinea" },
-    { value: "ER^291", label: "Eritrea" },
-    { value: "EE^372", label: "Estonia" },
-    { value: "ET^251", label: "Ethiopia" },
-    { value: "FK^500", label: "Falkland Islands (Malvinas)" },
-    { value: "FO^298", label: "Faroe Islands" },
-    { value: "FJ^679", label: "Fiji" },
-    { value: "FI^358", label: "Finland" },
     { value: "FR^33", label: "France" },
-    { value: "FX^590", label: "France, Metropolitan" },
-    { value: "GF^594", label: "French Guiana" },
-    { value: "PF^689", label: "French Polynesia" },
-    { value: "TF^590", label: "French Southern Territories" },
-    { value: "GA^241", label: "Gabon" },
-    { value: "GM^220", label: "Gambia" },
-    { value: "GE^995", label: "Georgia" },
     { value: "DE^49", label: "Germany" },
-    { value: "GH^233", label: "Ghana" },
-    { value: "GI^350", label: "Gibraltar" },
-    { value: "GR^30", label: "Greece" },
-    { value: "GL^299", label: "Greenland" },
-    { value: "GD^809", label: "Grenada" },
-    { value: "GP^590", label: "Guadeloupe" },
-    { value: "GU^1", label: "Guam" },
-    { value: "GT^502", label: "Guatemala" },
-    { value: "GN^224", label: "Guinea" },
-    { value: "GW^245", label: "Guinea-bissau" },
-    { value: "GY^592", label: "Guyana" },
-    { value: "HT^509", label: "Haiti" },
-    { value: "HM^61", label: "Heard and Mc Donald Islands" },
-    { value: "HN^504", label: "Honduras" },
     { value: "HK^852", label: "Hong Kong" },
-    { value: "HU^36", label: "Hungary" },
-    { value: "IS^354", label: "Iceland" },
     { value: "IN^91", label: "India", selected: true },
     { value: "ID^62", label: "Indonesia" },
-    { value: "IR^98", label: "Iran (Islamic Republic of)" },
-    { value: "IQ^964", label: "Iraq" },
-    { value: "IE^353", label: "Ireland" },
-    { value: "IL^972", label: "Israel" },
     { value: "IT^39", label: "Italy" },
-    { value: "JM^876", label: "Jamaica" },
     { value: "JP^81", label: "Japan" },
-    { value: "JO^962", label: "Jordan" },
-    { value: "KZ^7", label: "Kazakhstan" },
-    { value: "KE^254", label: "Kenya" },
-    { value: "KI^686", label: "Kiribati" },
-    { value: "KP^850", label: "Korea, Democratic People's Republic of" },
-    { value: "KR^82", label: "Korea, Republic of" },
-    { value: "KW^965", label: "Kuwait" },
-    { value: "KG^7", label: "Kyrgyzstan" },
-    { value: "LA^856", label: "Lao People's Democratic Republic" },
-    { value: "LV^371", label: "Latvia" },
-    { value: "LB^961", label: "Lebanon" },
-    { value: "LS^266", label: "Lesotho" },
-    { value: "LR^231", label: "Liberia" },
-    { value: "LY^218", label: "Libya" },
-    { value: "LI^423", label: "Liechtenstein" },
-    { value: "LT^370", label: "Lithuania" },
-    { value: "LU^352", label: "Luxembourg" },
-    { value: "MO^853", label: "Macau" },
-    { value: "MK^389", label: "Macedonia, The Former Yugoslav Republic of" },
-    { value: "MG^261", label: "Madagascar" },
-    { value: "MW^265", label: "Malawi" },
     { value: "MY^60", label: "Malaysia" },
-    { value: "MV^960", label: "Maldives" },
-    { value: "ML^223", label: "Mali" },
-    { value: "MT^356", label: "Malta" },
-    { value: "MH^692", label: "Marshall Islands" },
-    { value: "MQ^596", label: "Martinique" },
-    { value: "MR^222", label: "Mauritania" },
-    { value: "MU^230", label: "Mauritius" },
-    { value: "YT^269", label: "Mayotte" },
     { value: "MX^52", label: "Mexico" },
-    { value: "FM^691", label: "Micronesia, Federated States of" },
-    { value: "MD^373", label: "Moldova, Republic of" },
-    { value: "MC^377", label: "Monaco" },
-    { value: "MN^976", label: "Mongolia" },
-    { value: "ME^382", label: "Montenegro" },
-    { value: "MS^664", label: "Montserrat" },
-    { value: "MA^212", label: "Morocco" },
-    { value: "MZ^258", label: "Mozambique" },
-    { value: "MM^95", label: "Myanmar" },
-    { value: "NA^264", label: "Namibia" },
-    { value: "NR^674", label: "Nauru" },
-    { value: "NP^977", label: "Nepal" },
     { value: "NL^31", label: "Netherlands" },
-    { value: "AN^599", label: "Netherlands Antilles" },
-    { value: "NC^687", label: "New Caledonia" },
     { value: "NZ^64", label: "New Zealand" },
-    { value: "NI^505", label: "Nicaragua" },
-    { value: "NE^227", label: "Niger" },
-    { value: "NG^234", label: "Nigeria" },
-    { value: "NU^683", label: "Niue" },
-    { value: "NF^672", label: "Norfolk Island" },
-    { value: "MP^670", label: "Northern Mariana Islands" },
-    { value: "NO^47", label: "Norway" },
-    { value: "OM^968", label: "Oman" },
     { value: "PK^92", label: "Pakistan" },
-    { value: "PW^680", label: "Palau" },
-    { value: "PS^970", label: "Palestine" },
-    { value: "PA^507", label: "Panama" },
-    { value: "PG^675", label: "Papua New Guinea" },
-    { value: "PY^595", label: "Paraguay" },
-    { value: "PE^51", label: "Peru" },
     { value: "PH^63", label: "Philippines" },
-    { value: "PN^872", label: "Pitcairn" },
-    { value: "PL^48", label: "Poland" },
-    { value: "PT^351", label: "Portugal" },
-    { value: "PR^787", label: "Puerto Rico" },
-    { value: "QA^974", label: "Qatar" },
-    { value: "RE^262", label: "Reunion" },
-    { value: "RO^40", label: "Romania" },
     { value: "RU^7", label: "Russian Federation" },
-    { value: "RW^250", label: "Rwanda" },
-    { value: "KN^869", label: "Saint Kitts and Nevis" },
-    { value: "LC^758", label: "Saint Lucia" },
-    { value: "VC^784", label: "Saint Vincent and the Grenadines" },
-    { value: "WS^685", label: "Samoa" },
-    { value: "SM^378", label: "San Marino" },
-    { value: "ST^239", label: "Sao Tome and Principe" },
     { value: "SA^966", label: "Saudi Arabia" },
-    { value: "SN^221", label: "Senegal" },
-    { value: "RS^381", label: "Serbia" },
-    { value: "SC^248", label: "Seychelles" },
-    { value: "SL^232", label: "Sierra Leone" },
     { value: "SG^65", label: "Singapore" },
-    { value: "SK^421", label: "Slovakia (Slovak Republic)" },
-    { value: "SI^386", label: "Slovenia" },
-    { value: "SB^677", label: "Solomon Islands" },
-    { value: "SO^252", label: "Somalia" },
     { value: "ZA^27", label: "South Africa" },
-    { value: "GS^44", label: "South Georgia and the South Sandwich Islands" },
-    { value: "SS^211", label: "South Sudan" },
+    { value: "KR^82", label: "South Korea" },
     { value: "ES^34", label: "Spain" },
     { value: "LK^94", label: "Sri Lanka" },
-    { value: "SH^290", label: "St. Helena" },
-    { value: "PM^508", label: "St. Pierre and Miquelon" },
-    { value: "SD^249", label: "Sudan" },
-    { value: "SR^597", label: "Suriname" },
-    { value: "SJ^47", label: "Svalbard and Jan Mayen Islands" },
-    { value: "SZ^268", label: "Swaziland" },
     { value: "SE^46", label: "Sweden" },
     { value: "CH^41", label: "Switzerland" },
-    { value: "SY^963", label: "Syrian Arab Republic" },
-    { value: "TW^886", label: "Taiwan" },
-    { value: "TJ^992", label: "Tajikistan" },
-    { value: "TZ^255", label: "Tanzania, United Republic of" },
     { value: "TH^66", label: "Thailand" },
-    { value: "TG^228", label: "Togo" },
-    { value: "TK^64", label: "Tokelau" },
-    { value: "TO^676", label: "Tonga" },
-    { value: "TT^868", label: "Trinidad and Tobago" },
-    { value: "TN^216", label: "Tunisia" },
     { value: "TR^90", label: "Turkey" },
-    { value: "TM^993", label: "Turkmenistan" },
-    { value: "TC^649", label: "Turks and Caicos Islands" },
-    { value: "TV^688", label: "Tuvalu" },
-    { value: "UG^256", label: "Uganda" },
-    { value: "UA^380", label: "Ukraine" },
     { value: "AE^971", label: "United Arab Emirates" },
     { value: "UK^44", label: "United Kingdom" },
-    { value: "US^1", label: "United States" },
-    { value: "UM^1", label: "United States Minor Outlying Islands" },
-    { value: "UY^598", label: "Uruguay" },
-    { value: "UZ^998", label: "Uzbekistan" },
-    { value: "VU^678", label: "Vanuatu" },
-    { value: "VA^39", label: "Vatican City State (Holy See)" },
-    { value: "VE^58", label: "Venezuela" },
-    { value: "VN^84", label: "Viet Nam" },
-    { value: "VG^1", label: "Virgin Islands (British)" },
-    { value: "VI^1", label: "Virgin Islands (U.S.)" },
-    { value: "WF^681", label: "Wallis and Futuna Islands" },
-    { value: "EH^212", label: "Western Sahara" },
-    { value: "YE^967", label: "Yemen" },
-    { value: "YU^381", label: "Yugoslavia" },
-    { value: "ZR^243", label: "Zaire" },
-    { value: "ZM^260", label: "Zambia" },
-    { value: "ZW^263", label: "Zimbabwe" }
+    { value: "US^1", label: "United States" }
   ]
 
   useEffect(() => {
@@ -440,12 +234,10 @@ const Footer = () => {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate API call
     setTimeout(() => {
       setIsSubmitting(false)
       setSubmitSuccess(true)
       
-      // Reset form after 3 seconds
       setTimeout(() => {
         setFormData({
           productService: '',
@@ -467,39 +259,46 @@ const Footer = () => {
   }
 
   return (
-    <footer className="bg-[#231f20] text-white mt-12">
-      <div className="container mx-auto px-4 py-8">
-        {/* Enquiry Form Section */}
-        <div className="bg-[#d19336] py-6 mb-6 rounded-lg">
-          <div className="container mx-auto px-4">
-            <form onSubmit={handleSubmit} className="max-w-2xl mx-auto">
+    <footer className="bg-gradient-to-br from-[#231f20] via-gray-900 to-[#231f20] text-white mt-auto">
+      {/* Quick Enquiry Section */}
+      <div className="bg-gradient-to-r from-[#d19336] to-[#b8822a] py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                Get a Quick Quote
+              </h3>
+              <p className="text-white/90">Tell us what you're looking for and we'll get back to you</p>
+            </div>
+            
+            <form onSubmit={handleSubmit} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-2xl">
               {submitSuccess ? (
-                <div className="text-center py-4">
-                  <p className="text-xl font-semibold mb-2">Thank you</p>
-                  <p>Your Enquiry has been sent successfully.</p>
+                <div className="text-center py-8">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
+                    <i className="fas fa-check text-3xl text-white"></i>
+                  </div>
+                  <h4 className="text-2xl font-bold mb-2">Thank You!</h4>
+                  <p className="text-white/90">Your enquiry has been sent successfully.</p>
                 </div>
               ) : (
-                <>
-                  <h3 className="text-xl md:text-2xl font-bold text-center mb-4">
-                    Tell us what you are <b>looking</b> for?
-                  </h3>
-
+                <div className="space-y-4">
                   {/* Product/Service */}
-                  <div className="mb-3 relative" ref={autocompleteRef}>
+                  <div className="relative" ref={autocompleteRef}>
                     <input
                       type="text"
                       value={formData.productService}
                       onChange={handleProductChange}
-                      placeholder="Name of Product / Service"
-                      className="w-full px-4 py-3 rounded-md border-2 border-transparent focus:border-white focus:outline-none text-gray-800"
+                      placeholder="Search for a product or service..."
+                      className="w-full px-5 py-3.5 rounded-xl border-2 border-white/20 bg-white/95 focus:bg-white focus:border-white focus:outline-none text-gray-800 placeholder-gray-500 transition-all duration-300 shadow-lg"
+                      required
                     />
                     {showSuggestions && filteredSuggestions.length > 0 && (
-                      <div className="absolute z-20 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg max-h-60 overflow-y-auto">
+                      <div className="absolute z-20 w-full mt-2 bg-white border border-gray-200 rounded-xl shadow-2xl max-h-64 overflow-y-auto">
                         {filteredSuggestions.slice(0, 10).map((product, index) => (
                           <div
                             key={index}
                             onClick={() => selectProduct(product)}
-                            className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-800"
+                            className="px-5 py-3 hover:bg-[#d19336] hover:text-white cursor-pointer text-gray-800 transition-colors border-b border-gray-100 last:border-b-0"
                           >
                             {product.label}
                           </div>
@@ -510,32 +309,32 @@ const Footer = () => {
 
                   {/* Quantity and Unit */}
                   {showQuantity && (
-                    <div className="mb-3 flex gap-2">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       <input
                         type="number"
                         min="0"
                         max="9999999"
                         value={formData.quantity}
                         onChange={(e) => setFormData(prev => ({ ...prev, quantity: e.target.value }))}
-                        placeholder="Estimated Quantity"
-                        className="flex-1 px-4 py-3 rounded-md border-2 border-transparent focus:border-white focus:outline-none text-gray-800"
+                        placeholder="Quantity"
+                        className="px-5 py-3.5 rounded-xl border-2 border-white/20 bg-white/95 focus:bg-white focus:border-white focus:outline-none text-gray-800 shadow-lg"
                       />
-                      <div className="relative w-40" ref={unitRef}>
+                      <div className="relative" ref={unitRef}>
                         <input
                           type="text"
                           value={formData.unit}
                           onChange={handleUnitChange}
-                          placeholder="Unit Type"
+                          placeholder="Unit"
                           readOnly={isUnitReadOnly}
-                          className="w-full px-4 py-3 rounded-md border-2 border-transparent focus:border-white focus:outline-none text-gray-800 bg-gray-100"
+                          className="w-full px-5 py-3.5 rounded-xl border-2 border-white/20 bg-white/90 focus:bg-white focus:border-white focus:outline-none text-gray-800 shadow-lg"
                         />
                         {!isUnitReadOnly && showUnitSuggestions && unitSuggestions.length > 0 && (
-                          <div className="absolute z-20 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg max-h-40 overflow-y-auto">
+                          <div className="absolute z-20 w-full mt-2 bg-white border border-gray-200 rounded-xl shadow-2xl max-h-48 overflow-y-auto">
                             {unitSuggestions.slice(0, 8).map((unit, index) => (
                               <div
                                 key={index}
                                 onClick={() => handleUnitSuggestionClick(unit)}
-                                className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-800"
+                                className="px-5 py-2.5 hover:bg-[#d19336] hover:text-white cursor-pointer text-gray-800 transition-colors"
                               >
                                 {unit}
                               </div>
@@ -547,147 +346,270 @@ const Footer = () => {
                         <button
                           type="button"
                           onClick={() => setIsUnitReadOnly(false)}
-                          className="text-sm text-white underline px-2 py-3 flex items-center gap-1"
+                          className="px-5 py-3.5 rounded-xl bg-white/20 hover:bg-white/30 text-white font-medium transition-all duration-300 flex items-center justify-center gap-2"
                         >
-                          <i className="fas fa-pencil-square-o"></i> Edit
+                          <i className="fas fa-edit"></i> Edit Unit
                         </button>
                       )}
                     </div>
                   )}
 
                   {/* Details */}
-                  <div className="mb-3">
-                    <textarea
-                      rows="4"
-                      value={formData.details}
-                      onChange={(e) => setFormData(prev => ({ ...prev, details: e.target.value }))}
-                      placeholder="Describe your requirement in detail:"
-                      className="w-full px-4 py-3 rounded-md border-2 border-transparent focus:border-white focus:outline-none text-gray-800 resize-none"
-                    />
-                  </div>
+                  <textarea
+                    rows="3"
+                    value={formData.details}
+                    onChange={(e) => setFormData(prev => ({ ...prev, details: e.target.value }))}
+                    placeholder="Describe your requirement..."
+                    className="w-full px-5 py-3.5 rounded-xl border-2 border-white/20 bg-white/95 focus:bg-white focus:border-white focus:outline-none text-gray-800 placeholder-gray-500 resize-none shadow-lg"
+                  />
 
                   {/* Name and Email */}
-                  <div className="mb-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <input
                       type="text"
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="Your Name"
-                      className="px-4 py-3 rounded-md border-2 border-transparent focus:border-white focus:outline-none text-gray-800"
+                      placeholder="Your Name *"
+                      className="px-5 py-3.5 rounded-xl border-2 border-white/20 bg-white/95 focus:bg-white focus:border-white focus:outline-none text-gray-800 placeholder-gray-500 shadow-lg"
+                      required
                     />
                     <input
                       type="email"
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="Email"
-                      className="px-4 py-3 rounded-md border-2 border-transparent focus:border-white focus:outline-none text-gray-800"
+                      placeholder="Email Address *"
+                      className="px-5 py-3.5 rounded-xl border-2 border-white/20 bg-white/95 focus:bg-white focus:border-white focus:outline-none text-gray-800 placeholder-gray-500 shadow-lg"
+                      required
                     />
                   </div>
 
                   {/* Country and Phone */}
-                  <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <select
                       name="country"
                       value={formData.country}
                       onChange={handleCountryChange}
-                      className="px-4 py-3 rounded-md border-2 border-transparent focus:border-white focus:outline-none text-gray-800"
+                      className="px-5 py-3.5 rounded-xl border-2 border-white/20 bg-white/95 focus:bg-white focus:border-white focus:outline-none text-gray-800 shadow-lg"
+                      required
                     >
-                      <option value="">Select Country</option>
+                      <option value="">Select Country *</option>
                       {countries.map((country, index) => (
                         <option key={index} value={country.value}>
                           {country.label}
                         </option>
                       ))}
                     </select>
-                    <div className="relative flex">
+                    <div className="flex gap-2">
                       <input
                         type="text"
                         name="phone_isd"
-                        id="phone_isd"
                         value={formData.phoneIsd}
                         readOnly
-                        className="w-24 px-3 py-3 rounded-l-md border-2 border-r-0 border-transparent bg-gray-100 text-gray-800 text-sm"
+                        className="w-20 px-3 py-3.5 rounded-xl border-2 border-white/20 bg-white/70 text-gray-800 text-center font-semibold shadow-lg"
                       />
                       <input
-                        type="text"
+                        type="tel"
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="Mobile"
-                        className="flex-1 px-4 py-3 rounded-r-md border-2 border-transparent focus:border-white focus:outline-none text-gray-800"
+                        placeholder="Mobile Number *"
+                        className="flex-1 px-5 py-3.5 rounded-xl border-2 border-white/20 bg-white/95 focus:bg-white focus:border-white focus:outline-none text-gray-800 placeholder-gray-500 shadow-lg"
+                        required
                       />
                     </div>
                   </div>
 
                   {/* Submit */}
-                  <div className="text-center">
+                  <div className="text-center pt-2">
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="bg-[#231f20] text-white px-8 py-3 rounded-md hover:bg-gray-800 transition-colors font-semibold disabled:opacity-50"
+                      className="bg-[#231f20] hover:bg-black text-white px-12 py-4 rounded-xl font-bold text-lg transition-all duration-300 disabled:opacity-50 shadow-2xl transform hover:scale-105 disabled:hover:scale-100"
                     >
-                      {isSubmitting ? 'Sending...' : 'Send Now'}
+                      {isSubmitting ? (
+                        <span className="flex items-center gap-2">
+                          <i className="fas fa-spinner fa-spin"></i>
+                          Sending...
+                        </span>
+                      ) : (
+                        <span className="flex items-center gap-2">
+                          <i className="fas fa-paper-plane"></i>
+                          Send Enquiry
+                        </span>
+                      )}
                     </button>
                   </div>
-                </>
+                </div>
               )}
             </form>
           </div>
         </div>
+      </div>
 
-        {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
+      {/* Main Footer Content */}
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+          {/* Company Info */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link to="/" className="hover:text-[#d19336] transition">Home</Link></li>
-              <li><Link to="/about" className="hover:text-[#d19336] transition">About Us</Link></li>
-              <li><Link to="/products" className="hover:text-[#d19336] transition">Products</Link></li>
-              <li><Link to="/videos" className="hover:text-[#d19336] transition">Videos</Link></li>
-              <li><Link to="/contact" className="hover:text-[#d19336] transition">Contact Us</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-bold text-lg mb-4">Contact Info</h3>
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-start gap-2">
-                <i className="fas fa-map-marker-alt text-[#d19336] mt-1"></i>
-                <span>Moti Nagar, Delhi</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <i className="fas fa-phone text-[#d19336] mt-1"></i>
-                <span>+91-7230092401</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <i className="fas fa-envelope text-[#d19336] mt-1"></i>
-                <a href="mailto:hcplbharat@gmail.com" className="hover:text-[#d19336] transition">
-                  hcplbharat@gmail.com
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-bold text-lg mb-4">Follow Us</h3>
-            <div className="flex gap-4">
-              <a href="https://www.facebook.com/Haleypremiumwater" target="_blank" rel="noopener noreferrer" className="hover:text-[#d19336] transition">
-                <i className="fab fa-facebook-f text-xl"></i>
+            <h3 className="text-2xl font-bold text-white mb-4">
+              HALEY CIBUS <span className="text-[#d19336]">PVT. LTD.</span>
+            </h3>
+            <p className="text-gray-400 text-sm mb-4 leading-relaxed">
+              Leading manufacturer and exporter of water treatment plants, RO systems, and beverage manufacturing equipment.
+            </p>
+            <div className="flex gap-3">
+              <a href="https://www.facebook.com/Haleypremiumwater" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 hover:bg-[#d19336] rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110">
+                <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://twitter.com/HaleyWaterIndia" target="_blank" rel="noopener noreferrer" className="hover:text-[#d19336] transition">
-                <i className="fab fa-twitter text-xl"></i>
+              <a href="https://twitter.com/HaleyWaterIndia" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 hover:bg-[#d19336] rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110">
+                <i className="fab fa-twitter"></i>
               </a>
-              <a href="https://instagram.com/haleywaterindia" target="_blank" rel="noopener noreferrer" className="hover:text-[#d19336] transition">
-                <i className="fab fa-instagram text-xl"></i>
+              <a href="https://instagram.com/haleywaterindia" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 hover:bg-[#d19336] rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 hover:bg-[#d19336] rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110">
+                <i className="fab fa-linkedin-in"></i>
               </a>
             </div>
           </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-lg font-bold text-white mb-4 flex items-center">
+              <span className="w-1 h-6 bg-[#d19336] mr-2"></span>
+              Quick Links
+            </h4>
+            <ul className="space-y-2.5">
+              <li>
+                <Link to="/" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 flex items-center gap-2 group">
+                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 flex items-center gap-2 group">
+                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/products" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 flex items-center gap-2 group">
+                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
+                  Products
+                </Link>
+              </li>
+              <li>
+                <Link to="/clients" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 flex items-center gap-2 group">
+                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
+                  Our Clients
+                </Link>
+              </li>
+              <li>
+                <Link to="/videos" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 flex items-center gap-2 group">
+                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
+                  Videos
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 flex items-center gap-2 group">
+                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Popular Products */}
+          <div>
+            <h4 className="text-lg font-bold text-white mb-4 flex items-center">
+              <span className="w-1 h-6 bg-[#d19336] mr-2"></span>
+              Popular Products
+            </h4>
+            <ul className="space-y-2.5">
+              <li>
+                <Link to="/products" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 text-sm flex items-center gap-2 group">
+                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
+                  RO Water Plants
+                </Link>
+              </li>
+              <li>
+                <Link to="/products" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 text-sm flex items-center gap-2 group">
+                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
+                  Mineral Water Plants
+                </Link>
+              </li>
+              <li>
+                <Link to="/products" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 text-sm flex items-center gap-2 group">
+                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
+                  Sewage Treatment Plants
+                </Link>
+              </li>
+              <li>
+                <Link to="/products" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 text-sm flex items-center gap-2 group">
+                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
+                  Water Softeners
+                </Link>
+              </li>
+              <li>
+                <Link to="/products" className="text-gray-400 hover:text-[#d19336] transition-colors duration-300 text-sm flex items-center gap-2 group">
+                  <i className="fas fa-angle-right text-[#d19336] text-xs group-hover:translate-x-1 transition-transform"></i>
+                  Filling Machines
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h4 className="text-lg font-bold text-white mb-4 flex items-center">
+              <span className="w-1 h-6 bg-[#d19336] mr-2"></span>
+              Contact Info
+            </h4>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3 text-gray-400">
+                <i className="fas fa-map-marker-alt text-[#d19336] mt-1 text-sm"></i>
+                <span className="text-sm">Moti Nagar, Delhi, India</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <i className="fas fa-phone text-[#d19336] mt-1 text-sm"></i>
+                <a href="tel:+917230092401" className="text-gray-400 hover:text-[#d19336] transition-colors text-sm">
+                  +91-7230092401
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <i className="fas fa-envelope text-[#d19336] mt-1 text-sm"></i>
+                <a href="mailto:hcplbharat@gmail.com" className="text-gray-400 hover:text-[#d19336] transition-colors text-sm break-all">
+                  hcplbharat@gmail.com
+                </a>
+              </li>
+              <li className="flex items-start gap-3 text-gray-400">
+                <i className="fas fa-clock text-[#d19336] mt-1 text-sm"></i>
+                <span className="text-sm">Mon - Sat: 9:00 AM - 6:00 PM</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        {/* Copyright */}
-        <div className="border-t border-gray-700 pt-6 text-center text-sm">
-          <p className="mb-2">All Rights Reserved. <strong>HALEY CIBUS PVT. LTD.</strong></p>
-          <p>Developed & Managed By <a href="https://www.weblink.in" rel="nofollow" target="_blank" className="hover:text-[#d19336] transition">Weblink.In Pvt. Ltd.</a></p>
+        {/* Bottom Bar */}
+        <div className="border-t border-white/10 pt-8 mt-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+            <p className="text-center md:text-left">
+              &copy; 2024 <span className="font-semibold text-white">HALEY CIBUS PVT. LTD.</span> All Rights Reserved.
+            </p>
+            <p className="text-center md:text-right">
+              Developed & Managed By{' '}
+              <a
+                href="https://www.weblink.in"
+                rel="nofollow"
+                target="_blank"
+                className="text-[#d19336] hover:text-white transition-colors font-medium"
+              >
+                Weblink.In Pvt. Ltd.
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
