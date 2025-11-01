@@ -34,13 +34,6 @@ const ProductVideos = () => {
       description: 'Medical-grade reverse osmosis systems',
       link: '/products/dialysis-ro-plant',
       thumbnail: 'https://img.youtube.com/vi/zyHmifiHzrU/maxresdefault.jpg'
-    },
-    {
-      id: 'zyHmifiHzrU2',
-      title: 'Industrial Reverse Osmosis Plant',
-      description: 'Large-scale water purification solutions',
-      link: '/products/industrial-reverse-osmosis-plant',
-      thumbnail: 'https://img.youtube.com/vi/zyHmifiHzrU/maxresdefault.jpg'
     }
   ]
 
